@@ -66,6 +66,17 @@ nav > * {
   gap: 2rem;
 }
 
+.mobile-menu-icon {
+  font-weight: bolder;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  position: absolute;
+  border: 1px solid black;
+  padding: .5rem .8rem;
+}
+
 .nav-menu-item {
   justify-content: center;
 }
@@ -78,21 +89,27 @@ nav > * {
   font-family: 'Karla', sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 /*LANDING SECTION*/
 
 .landing-section {
   background-color: var(--dark-violet);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 4.5rem 9rem;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  padding: 6rem 9rem;
   height: 700px;
 }
 
+
 .landing__text-container {
   display: grid;
-  width: 95%;
+  width: 50%;
   justify-content: center;
   align-content: center;
+  margin-top: 11rem !important;
 }
 
 .landing_headline::before {
@@ -101,7 +118,7 @@ nav > * {
   width: 140px;
   content: '';
   position: absolute;
-  top: 15rem;
+  top: 13rem;
 }
 
 .landing_headline {
@@ -113,16 +130,16 @@ nav > * {
 
 .landing_text {
   margin-top: 1.5rem;
-  width: 100%;
+  width: 95%;
   line-height: 1.5;
 }
 
-.landing__img-container {
-  width: 100%;
-}
-
 .img-landing {
-  transform: translate(12%, 21%);
+  transform: translate(125%, -61%);
+} 
+
+.img-landing-mobile {
+  display: none;
 }
 
 .btn-viewplans-landing {
@@ -152,5 +169,81 @@ nav > * {
   transform: translate(0, 2%);
   z-index: 1;
 }
+
+
+/*LARGE SCREEN VIEW*/
+@media screen and (min-width: 1600px) {
+
+  .hidden {
+    display: none;
+  }
+
+  nav {
+    padding: 1.85rem 14rem;
+  }
+
+  .landing-section {
+    padding: 1.85rem 14rem;
+    height: 800px;
+  }
+
+  .landing__text-container {
+    margin-top: 13rem !important;
+  }
+
+  .landing_text {
+    width: 95%;
+  }
+
+  .img-landing {
+    transform: translate(124%, -42%);
+    width: 650px;
+  }
+}
+
+/*MOBILE SCREEN VIEW*/
+@media screen and (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    padding: 1.85rem 3rem;
+    display: flex;
+    position: sticky;
+  }
+
+  .nav-logo {
+    width: 100px;
+  }
+
+  .landing-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin-top: 50rem;
+  }
+
+  .img-landing {
+    transform: translate(0, 21%);
+    display: none;
+  }
+
+
+  .img-landing-mobile {
+    display: block;
+    object-fit: cover;
+
+    position: sticky;
+    transform: translate(0%, -110%);
+    order: 2;
+
+  }
+
+}
+
+ 
+
 
 
