@@ -192,3 +192,22 @@ nav {
     width: 100%;
   }
 }
+
+/*LARGE SCREENS*/
+@media screen and (min-width: 1600px) {
+  nav {
+    padding: 1.85rem 19rem;
+  }
+
+  .landing__bg {
+    padding: 1.85rem 14rem;
+  }
+
+  .img-landing {
+    transform: translate(197%, -80%);
+  }
+
+  .img-landing-bg-right {
+    top: 0;
+  }
+}
