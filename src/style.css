@@ -186,6 +186,99 @@ nav {
   font-size: 18px;
 }
 
+/*HOW WE WORK BANNER*/
+
+.banner__container {
+  padding: 1.85rem 9rem;
+  margin-top: 6rem;
+}
+.banner__bg {
+  background-color: var(--dark-violet);
+  padding: 4.85rem 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-header {
+  color: var(--very-light-gray);
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  width: 39%;
+  overflow-wrap: break-word;
+  line-height: 1;
+}
+
+.banner-btn-container {
+  align-self: center;
+}
+
+.btn-how_we_work {
+  padding: 0.7rem 1.5rem;
+  border: 2px solid var(--very-light-gray);
+  background-color: transparent;
+  color: var(--very-light-gray);
+  font-family: 'Karla',
+  serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.img-banner-bg {
+  position: absolute;
+  right: 0;
+  transform: translate(-34%, -31%);
+}
+
+/*FOOTER*/
+
+footer {
+  padding: 1.85rem 9rem;
+}
+
+.footer-logo {
+  height: 15px;
+  display: flex;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.footer-info-container {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.footer-info-container > * {
+  flex: 1 1 100%;
+  
+}
+
+/* .footer-underline {
+  padding: 0 9rem;
+  height: 1px;
+  width: 100%;
+  position: relative;
+  background-color: var(--dark-grayish-violet);
+} */
+
+
+
 /* MOBILE SCREENS*/
 
 @media screen and (max-width: 600px) {
@@ -313,6 +406,46 @@ nav {
   .body-icon {
     margin: 0 auto;
   }  
+
+  .banner__container {
+    padding:  2rem;
+    margin-top: 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+  }
+
+  .banner__bg {
+    padding: 2rem 6rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .banner-header {
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  .btn-how_we_work {
+    margin: 0 auto;
+    display: block;
+    margin-top: 1rem;
+    padding: .8rem 2.5rem;
+  }
+
+  .img-banner-bg {
+    display: none;
+  }
+
+  .img-banner-bg-mobile {
+    position: absolute;
+    transform: translate(130%, -9%);
+  }
 }
 
 /*LARGE SCREENS*/
