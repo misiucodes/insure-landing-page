@@ -247,7 +247,7 @@
 }
 .banner__bg {
   background-color: var(--dark-violet);
-  padding: 3.2rem 4.5rem;
+  padding: 4.8rem 4.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -589,7 +589,7 @@ footer {
   }
 
   .banner__bg {
-    padding: 4.5rem 1rem;
+    padding: 1.5rem 1rem;
     display: grid;
     grid-template-rows: 1fr;
     align-content: center;
@@ -617,7 +617,7 @@ footer {
   .img-banner-bg-mobile {
     position: absolute;
     right: 0;
-    transform: translate(-19%, -23%);
+    transform: translate(-19%, -81%);
   }
 
   footer {
