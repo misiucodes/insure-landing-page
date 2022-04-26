@@ -111,13 +111,13 @@
 
 .landing-headline {
   color: var(--very-light-gray);
-  font-size: 78px;
+  font-size: 79px;
   width: 90%;
   line-height: .9;
   font-family: 'DM Serif Display',
   sans-serif;
   font-weight: 400;
-  transform: translateY(-61px);
+  transform: translateY(-66px);
 }
 
 .landing-description {
@@ -125,7 +125,7 @@
   font-size: 18px;
   color: var(--very-light-gray);
   line-height: 1.5;
-  transform: translateY(-33%);
+  transform: translateY(-49%);
 }
 
 .underscore {
@@ -151,7 +151,7 @@
   font-size: 13px;
   font-weight: 700;
   font-family: 'Karla', sans-serif;
-  margin-top: 1rem;
+  margin-top: 10px;
   cursor: pointer;
 }
 
