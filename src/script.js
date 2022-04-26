@@ -19,20 +19,3 @@ function closeMobileMenu(event) {
 
 mobileMenu.addEventListener('click', showMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
-// function showMobileMenu(event) {
-//   event.preventDefault;
-//   closeMenu.classList.remove('hide');
-//   mobileMenu.style.display = 'none';
-//   navUL.classList.toggle('show');
-//   navBg.classList.remove('hide');
-// };
-
-// function closeMobileMenu(event) {
-//   event.preventDefault;
-//   closeMenu.classList.toggle('hide');
-//   mobileMenu.style.display = 'block';
-//   navUL.classList.toggle('hide');
-// };
-
-// mobileMenu.addEventListener('click', showMobileMenu);
-// closeMenu.addEventListener('click', closeMobileMenu);

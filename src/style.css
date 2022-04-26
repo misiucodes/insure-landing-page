@@ -1,4 +1,5 @@
 /* RESET*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +7,7 @@
 }
 
 /*CONSTANT STYLES*/
+
 :root {
   --dark-violet: hsl(256, 26%, 20%);
   --grayish-blue: hsl(216, 30%, 68%);
@@ -74,6 +76,7 @@
 }
 
 /*HAMBURGER MENU*/
+
 .hamburger-menu {
   font-weight: bolder;
   display: flex;
@@ -528,9 +531,9 @@ footer {
   }
   
   .img-landing-bg-left-mobile {
-        transform: translate(-11%, -188%);
-        position: absolute;
-        left: 0;
+    transform: translate(-11%, -188%);
+    position: absolute;
+    left: 0;
   }
 
   .body__container {
@@ -543,7 +546,7 @@ footer {
     display: block;
     margin: 0 auto;
     width: 180px;
-    }
+  }
   
   .body-headline {
     text-align: center;
@@ -661,6 +664,7 @@ footer {
 }
 
 /*LARGE SCREENS*/
+
 @media screen and (min-width: 1600px) {
 
   .top-nav {
@@ -684,10 +688,10 @@ footer {
     right: 0;
     transform: translate(-34%, -30%);
 }
-  }
 
   .banner__bg {
     padding: 5.2rem 4.5rem;
   }
-
 }
+
+
