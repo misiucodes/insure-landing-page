@@ -4,47 +4,179 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insure</title>
-  <link rel="stylesheet" href="src/styles.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/style.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
   </style>
 </head>
 <body>
-  <nav>
-    <div class="nav-logo-container">
-      <img src="images/logo.svg" class="nav-logo" alt="Insure logo" />
-    </div>
-    <ul class="nav-menu">
-      <li class="nav-menu-item">HOW WE WORK</li>
-      <li class="nav-menu-item">BLOG</li>
-      <li class="nav-menu-item">ACCOUNT</li>
-      <button class="btn-viewplans-nav">VIEW PLANS</button>
-      <div class="mobile-menu-icon hidden">&#9776;</div>
+
+  <nav class="top-nav">
+    <img src="images/logo.svg" alt="Insure logo" class="nav-logo"/>
+    <button class="hamburger-menu hidden" id="hamburger-menu">
+      &#9776;
+    </button>
+    <button class="close-menu hide" id="close-menu">
+      &#10006;
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item" id="nav-item">HOW WE WORK</li>
+      <li class="nav-item" id="nav-item">BLOG</li>
+      <li class="nav-item" id="nav-item">ACCOUNT</li>
+      <button class="nav-item nav-btn" id="nav-item">VIEW PLANS</button>
+      <img src="images/bg-pattern-mobile-nav.svg" alt="abstract background" class="nav-bg hide" id="nav-bg"/>
     </ul>
   </nav>
-  <div class="landing__bg-img-r">
-    <img src="images/bg-pattern-intro-right-desktop.svg" class="landing__bg-right" alt="abstract swirl design" />
-  </div>
-  <main class="landing-section">
-    <div class="landing__text-container">
-      <h1 class="landing_headline heading-lt">Humanizing your insurance.</h1>
-      <p class="landing_text body-text-lt">
-        Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.
-      </p>
-      <div class="btn-container">
-        <button class="btn-viewplans-landing">
-          VIEW PLANS
+
+  <section class="landing__container">
+    <div class="landing__bg">
+      <img src="images/bg-pattern-intro-right-desktop.svg" class="img-landing-bg-right">
+      <img src="images/bg-pattern-intro-right-mobile.svg" class="img-landing-bg-right-mobile hidden" />
+      <div class="landing__text-container">
+        <div class="underscore"></div>
+        <h1 class="landing-headline">
+          Humanizing your insurance.
+        </h1>
+        <p class="landing-description">
+          Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that's right for you. Ensure you and your loved ones are protected.
+        </p>
+        <div class="btn-container">
+          <button class="btn-landing">
+            VIEW PLANS
+          </button>
+        </div>
+      </div>
+      <img src="images/bg-pattern-intro-left-desktop.svg" class="img-landing-bg-left"/>
+      <img src="images/bg-pattern-intro-left-mobile.svg" class="img-landing-bg-left-mobile hidden" alt="abstract design"/>
+    </div>
+
+    <div class="landing__img-container">
+      <img src="images/image-intro-desktop.jpg" class="img-landing" alt="Family holding hands and walking"/>
+    </div>
+  </section>
+
+  <section class="body__container">
+    <div class="underline-body"></div>
+    <h2 class="body-headline">
+      We're different
+    </h2>
+    <div class="body-info__section">
+      <div class="snappy">
+        <img src="images/icon-snappy-process.svg" class="body-icon"/>
+        <h3 class="body-info-title">
+          Snappy Process
+        </h3>
+        <p class="body-description">
+          Our application process can be completed in minutes, not hours. Don't get stuck filling in tedious forms.
+        </p>
+      </div>
+      <div class="affordable">
+        <img src="images/icon-affordable-prices.svg" class="body-icon"/>
+        <h4 class="body-info-title">
+          Affordable Prices
+        </h4>
+        <p class="body-description">
+          We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.
+        </p>
+      </div>
+      <div class="people">
+        <img src="images/icon-people-first.svg" class="body-icon"/>
+        <h5 class="body-info-title">
+          People First
+        </h5>
+        <p class="body-description">
+          Our plans aren't full of conditions and clauses to prevent payouts. We make sure you're covered when you need it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner__container">
+    <div class="banner__bg">
+      <h6 class="banner-header">
+        Find out more about how we work
+      </h6>
+      <div class="bg-img">
+        <img src="images/bg-pattern-how-we-work-desktop.svg" class="img-banner-bg"/>
+      <img src="images/bg-pattern-how-we-work-mobile.svg" class="img-banner-bg-mobile hidden"/>
+      </div>
+      <div class="banner-btn-container">
+        <button class="btn-how_we_work">
+          HOW WE WORK
         </button>
       </div>
     </div>
-    <div class="landing__img-container">
-      <img src="images/image-intro-desktop.jpg" class="img-landing" alt="Father, mother and two children holding hands and walking" />
-      <img src="images/image-intro-mobile.jpg" class="img-landing-mobile" alt="Father, mother and two children holding hands and walking" />
+  </section>
+
+  <footer>
+    <div class="footer__content">
+      <img src="images/bg-pattern-footer-mobile.svg" alt="abstract design" class="img-bg-footer hidden"/>
+      <nav class="footer-nav">
+        <img src="images/logo.svg" class="footer-logo" alt="insure logo"/>
+        <ul class="footer-socials">
+          <li class="social-item">
+            <img src="images/icon-facebook.svg" alt="facebook icon"/>
+          </li>
+          <li class="social-item">
+            <img src="images/icon-twitter.svg" alt="twitter icon"/>
+          </li>
+          <li class="social-item">
+            <img src="images/icon-pinterest.svg" alt="pinterest icon"/>
+          </li>
+          <li class="social-item">
+            <img src="images/icon-instagram.svg" alt="instagram icon"/>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-underline"></div>
+      <div class="footer-info-container">
+        <div class="our-company">
+          <div class="footer-headline">
+            OUR COMPANY
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item">HOW WE WORK</li>
+            <li class="info-list-item">WHY INSURE?</li>
+            <li class="info-list-item">VIEW PLANS</li>
+            <li class="info-list-item">REVIEWS</li>
+          </ul>
+        </div>
+        <div class="help-me">
+          <div class="footer-headline">
+            HELP ME
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item">FAQ</li>
+            <li class="info-list-item">TERMS OF USE</li>
+            <li class="info-list-item">PRIVACY POLICY</li>
+            <li class="info-list-item">COOKIES</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <div class="footer-headline">
+            CONTACT
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item">SALES</li>
+            <li class="info-list-item">SUPPORT</li>
+            <li class="info-list-item">LIVE CHAT</li>
+          </ul>
+        </div>
+        <div class="others">
+          <div class="footer-headline">
+            OTHERS
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item">CAREERS</li>
+            <li class="info-list-item">PRESS</li>
+            <li class="info-list-item">LICENSES</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </main>
-  <div class="landing__bg-img-l">
-    <img src="images/bg-pattern-intro-left-desktop.svg" alt="abstract curve design" class="landing__bg-left">
-  </div>
+    
+  </footer>
+  <script src="src/script.js"></script>
 </body>
 </html>
