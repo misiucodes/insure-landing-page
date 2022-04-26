@@ -14,11 +14,18 @@
 
   <nav class="top-nav">
     <img src="images/logo.svg" alt="Insure logo" class="nav-logo"/>
-    <ul class="nav-menu">
-      <li class="nav-item">HOW WE WORK</li>
-      <li class="nav-item">BLOG</li>
-      <li class="nav-item">ACCOUNT</li>
-      <button class="nav-item nav-btn">VIEW PLANS</button>
+    <button class="hamburger-menu hidden" id="hamburger-menu">
+      &#9776;
+    </button>
+    <button class="close-menu hide" id="close-menu">
+      &#10006;
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item" id="nav-item">HOW WE WORK</li>
+      <li class="nav-item" id="nav-item">BLOG</li>
+      <li class="nav-item" id="nav-item">ACCOUNT</li>
+      <button class="nav-item nav-btn" id="nav-item">VIEW PLANS</button>
+      <img src="images/bg-pattern-mobile-nav.svg" alt="abstract background" class="nav-bg hide" id="nav-bg"/>
     </ul>
   </nav>
 
@@ -90,13 +97,15 @@
       <h6 class="banner-header">
         Find out more about how we work
       </h6>
+      <div class="bg-img">
+        <img src="images/bg-pattern-how-we-work-desktop.svg" class="img-banner-bg"/>
+      <img src="images/bg-pattern-how-we-work-mobile.svg" class="img-banner-bg-mobile hidden"/>
+      </div>
       <div class="banner-btn-container">
         <button class="btn-how_we_work">
           HOW WE WORK
         </button>
       </div>
-      <img src="images/bg-pattern-how-we-work-desktop.svg" class="img-banner-bg"/>
-      <img src="images/bg-pattern-how-we-work-mobile.svg" class="img-banner-bg-mobile hidden"/>
     </div>
   </section>
 
@@ -168,6 +177,6 @@
     </div>
     
   </footer>
-  
+  <script src="src/script.js"></script>
 </body>
 </html>
